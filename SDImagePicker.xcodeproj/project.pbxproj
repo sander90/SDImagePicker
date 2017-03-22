@@ -1,0 +1,331 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C5790E901E823AD3004A060D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C5790E8F1E823AD3004A060D /* main.m */; };
+		C5790E931E823AD3004A060D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5790E921E823AD3004A060D /* AppDelegate.m */; };
+		C5790E961E823AD3004A060D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5790E951E823AD3004A060D /* ViewController.m */; };
+		C5790E991E823AD3004A060D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5790E971E823AD3004A060D /* Main.storyboard */; };
+		C5790E9B1E823AD3004A060D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5790E9A1E823AD3004A060D /* Assets.xcassets */; };
+		C5790E9E1E823AD3004A060D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5790E9C1E823AD3004A060D /* LaunchScreen.storyboard */; };
+		C5790EA71E823FBD004A060D /* SDCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5790EA61E823FBD004A060D /* SDCameraView.m */; };
+		C5790EAA1E82499C004A060D /* SDSelectedImageActionSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5790EA91E82499C004A060D /* SDSelectedImageActionSheetView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C5790E8B1E823AD3004A060D /* SDImagePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDImagePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5790E8F1E823AD3004A060D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C5790E911E823AD3004A060D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C5790E921E823AD3004A060D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C5790E941E823AD3004A060D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C5790E951E823AD3004A060D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C5790E981E823AD3004A060D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C5790E9A1E823AD3004A060D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C5790E9D1E823AD3004A060D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C5790E9F1E823AD3004A060D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5790EA51E823FBD004A060D /* SDCameraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCameraView.h; sourceTree = "<group>"; };
+		C5790EA61E823FBD004A060D /* SDCameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCameraView.m; sourceTree = "<group>"; };
+		C5790EA81E82499C004A060D /* SDSelectedImageActionSheetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDSelectedImageActionSheetView.h; sourceTree = "<group>"; };
+		C5790EA91E82499C004A060D /* SDSelectedImageActionSheetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDSelectedImageActionSheetView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C5790E881E823AD3004A060D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C5790E821E823AD3004A060D = {
+			isa = PBXGroup;
+			children = (
+				C5790E8D1E823AD3004A060D /* SDImagePicker */,
+				C5790E8C1E823AD3004A060D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C5790E8C1E823AD3004A060D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C5790E8B1E823AD3004A060D /* SDImagePicker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C5790E8D1E823AD3004A060D /* SDImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				C5790E911E823AD3004A060D /* AppDelegate.h */,
+				C5790E921E823AD3004A060D /* AppDelegate.m */,
+				C5790E941E823AD3004A060D /* ViewController.h */,
+				C5790E951E823AD3004A060D /* ViewController.m */,
+				C5790E971E823AD3004A060D /* Main.storyboard */,
+				C5790E9A1E823AD3004A060D /* Assets.xcassets */,
+				C5790E9C1E823AD3004A060D /* LaunchScreen.storyboard */,
+				C5790E9F1E823AD3004A060D /* Info.plist */,
+				C5790E8E1E823AD3004A060D /* Supporting Files */,
+				C5790EA51E823FBD004A060D /* SDCameraView.h */,
+				C5790EA61E823FBD004A060D /* SDCameraView.m */,
+				C5790EA81E82499C004A060D /* SDSelectedImageActionSheetView.h */,
+				C5790EA91E82499C004A060D /* SDSelectedImageActionSheetView.m */,
+			);
+			path = SDImagePicker;
+			sourceTree = "<group>";
+		};
+		C5790E8E1E823AD3004A060D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C5790E8F1E823AD3004A060D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C5790E8A1E823AD3004A060D /* SDImagePicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5790EA21E823AD3004A060D /* Build configuration list for PBXNativeTarget "SDImagePicker" */;
+			buildPhases = (
+				C5790E871E823AD3004A060D /* Sources */,
+				C5790E881E823AD3004A060D /* Frameworks */,
+				C5790E891E823AD3004A060D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SDImagePicker;
+			productName = SDImagePicker;
+			productReference = C5790E8B1E823AD3004A060D /* SDImagePicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C5790E831E823AD3004A060D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = shansander;
+				TargetAttributes = {
+					C5790E8A1E823AD3004A060D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 778546W9LD;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C5790E861E823AD3004A060D /* Build configuration list for PBXProject "SDImagePicker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C5790E821E823AD3004A060D;
+			productRefGroup = C5790E8C1E823AD3004A060D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C5790E8A1E823AD3004A060D /* SDImagePicker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C5790E891E823AD3004A060D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5790E9E1E823AD3004A060D /* LaunchScreen.storyboard in Resources */,
+				C5790E9B1E823AD3004A060D /* Assets.xcassets in Resources */,
+				C5790E991E823AD3004A060D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C5790E871E823AD3004A060D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5790EAA1E82499C004A060D /* SDSelectedImageActionSheetView.m in Sources */,
+				C5790EA71E823FBD004A060D /* SDCameraView.m in Sources */,
+				C5790E961E823AD3004A060D /* ViewController.m in Sources */,
+				C5790E931E823AD3004A060D /* AppDelegate.m in Sources */,
+				C5790E901E823AD3004A060D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C5790E971E823AD3004A060D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5790E981E823AD3004A060D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C5790E9C1E823AD3004A060D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5790E9D1E823AD3004A060D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C5790EA01E823AD3004A060D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C5790EA11E823AD3004A060D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C5790EA31E823AD3004A060D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 778546W9LD;
+				INFOPLIST_FILE = SDImagePicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aico.-.SDImagePicker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C5790EA41E823AD3004A060D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 778546W9LD;
+				INFOPLIST_FILE = SDImagePicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aico.-.SDImagePicker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C5790E861E823AD3004A060D /* Build configuration list for PBXProject "SDImagePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5790EA01E823AD3004A060D /* Debug */,
+				C5790EA11E823AD3004A060D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5790EA21E823AD3004A060D /* Build configuration list for PBXNativeTarget "SDImagePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5790EA31E823AD3004A060D /* Debug */,
+				C5790EA41E823AD3004A060D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C5790E831E823AD3004A060D /* Project object */;
+}
