@@ -10,4 +10,8 @@
 
 @interface SDSelectedImageActionSheetView : UIView
 
+@property (nonatomic, weak) UICollectionView * rootCollectionView;
+
+- (void)showAction;
+
 @end

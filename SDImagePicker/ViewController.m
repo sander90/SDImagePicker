@@ -8,10 +8,13 @@
 
 #import "ViewController.h"
 #import "SDCameraView.h"
+#import "SDSelectedImageActionSheetView.h"
 
 @interface ViewController ()
 
 @property (nonatomic, weak) SDCameraView * cameraView;
+
+@property (nonatomic, weak) SDSelectedImageActionSheetView * theSelectedImageActionView;
 
 @end
 
@@ -31,8 +34,18 @@
 - (IBAction)onSelectedImage:(id)sender
 {
     NSLog(@"selected image");
-    
-    self.cameraView.center = self.view.center;
+    self.cameraView.center =self.view.center;
+//    [self.theSelectedImageActionView showAction];
+}
+
+- (SDSelectedImageActionSheetView * )theSelectedImageActionView
+{
+    if (!_theSelectedImageActionView) {
+        SDSelectedImageActionSheetView * theView = [[SDSelectedImageActionSheetView alloc] init];
+        [self.view addSubview:theView];
+        _theSelectedImageActionView = theView;
+    }
+    return _theSelectedImageActionView;
 }
 
 - (SDCameraView *)cameraView
