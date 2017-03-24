@@ -10,6 +10,8 @@
 #import "UtilsMacro.h"
 #import "SDImageHorizontalLayout.h"
 #import "ImageCollectionViewCell.h"
+#import "CameraCollectionViewCell.h"
+#import "SDCollectionManager.h"
 
 #define itemIdentifier @"imagecollectionCell"
 
@@ -20,7 +22,8 @@
     self = [super init];
     if (self) {
         self.frame = CGRectMake(0, HEIGHT, WIDTH, HEIGHT/3.0f);
-        [self.rootCollectionView registerClass:[ImageCollectionViewCell class] forCellWithReuseIdentifier:itemIdentifier];
+        [self.rootCollectionView registerClass:[ImageCollectionViewCell class] forCellWithReuseIdentifier:[ImageCollectionViewCell getReuseIdentifier]];
+        [self.rootCollectionView registerClass:[CameraCollectionViewCell class] forCellWithReuseIdentifier:[CameraCollectionViewCell getReuseIdentifier]]; 
 
         self.rootCollectionView.delegate = self;
         self.rootCollectionView.dataSource = self;
@@ -73,11 +76,10 @@
 // The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    UICollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:itemIdentifier forIndexPath:indexPath];
+    SDImageBaseCollectionViewCell * cell = [SDCollectionManager ItemForCollectionView:collectionView atIndexPath:indexPath];
     [cell setBackgroundColor:[UIColor redColor]];
-    
+    [cell setUpView];
     return cell;
-    
 }
 
 

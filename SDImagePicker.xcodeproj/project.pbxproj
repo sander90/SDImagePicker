@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		C54D45621E828F46008F1C11 /* SDPhotoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C54D45611E828F46008F1C11 /* SDPhotoManager.m */; };
 		C54D45661E83E32E008F1C11 /* ImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C54D45651E83E32E008F1C11 /* ImageCollectionViewCell.m */; };
+		C54D45691E84DCB3008F1C11 /* SDImageBaseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C54D45681E84DCB3008F1C11 /* SDImageBaseCollectionViewCell.m */; };
+		C54D456C1E84DCD8008F1C11 /* CameraCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C54D456B1E84DCD8008F1C11 /* CameraCollectionViewCell.m */; };
+		C54D456F1E84E035008F1C11 /* SDCollectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C54D456E1E84E035008F1C11 /* SDCollectionManager.m */; };
 		C5635AFC1E827ED4005981EE /* SDImageHorizontalLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C5635AFB1E827ED4005981EE /* SDImageHorizontalLayout.m */; };
 		C5790E901E823AD3004A060D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C5790E8F1E823AD3004A060D /* main.m */; };
 		C5790E931E823AD3004A060D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5790E921E823AD3004A060D /* AppDelegate.m */; };
@@ -18,14 +21,24 @@
 		C5790E9E1E823AD3004A060D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5790E9C1E823AD3004A060D /* LaunchScreen.storyboard */; };
 		C5790EA71E823FBD004A060D /* SDCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5790EA61E823FBD004A060D /* SDCameraView.m */; };
 		C5790EAA1E82499C004A060D /* SDSelectedImageActionSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5790EA91E82499C004A060D /* SDSelectedImageActionSheetView.m */; };
+		E3A8FF28F7326BEDA6D2EAF4 /* libPods-SDImagePicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3236A363019B10350B6972B /* libPods-SDImagePicker.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		053756F0FACB02231D40C012 /* Pods-SDImagePicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDImagePicker.release.xcconfig"; path = "Pods/Target Support Files/Pods-SDImagePicker/Pods-SDImagePicker.release.xcconfig"; sourceTree = "<group>"; };
+		1C263575BB4C7636875EADE1 /* Pods-SDImagePicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDImagePicker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SDImagePicker/Pods-SDImagePicker.debug.xcconfig"; sourceTree = "<group>"; };
+		B3236A363019B10350B6972B /* libPods-SDImagePicker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SDImagePicker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C53558831E82654C0092841E /* UtilsMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilsMacro.h; sourceTree = "<group>"; };
 		C54D45601E828F46008F1C11 /* SDPhotoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPhotoManager.h; sourceTree = "<group>"; };
 		C54D45611E828F46008F1C11 /* SDPhotoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDPhotoManager.m; sourceTree = "<group>"; };
 		C54D45641E83E32E008F1C11 /* ImageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCollectionViewCell.h; sourceTree = "<group>"; };
 		C54D45651E83E32E008F1C11 /* ImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCollectionViewCell.m; sourceTree = "<group>"; };
+		C54D45671E84DCB3008F1C11 /* SDImageBaseCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDImageBaseCollectionViewCell.h; sourceTree = "<group>"; };
+		C54D45681E84DCB3008F1C11 /* SDImageBaseCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDImageBaseCollectionViewCell.m; sourceTree = "<group>"; };
+		C54D456A1E84DCD8008F1C11 /* CameraCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraCollectionViewCell.h; sourceTree = "<group>"; };
+		C54D456B1E84DCD8008F1C11 /* CameraCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraCollectionViewCell.m; sourceTree = "<group>"; };
+		C54D456D1E84E035008F1C11 /* SDCollectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCollectionManager.h; sourceTree = "<group>"; };
+		C54D456E1E84E035008F1C11 /* SDCollectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCollectionManager.m; sourceTree = "<group>"; };
 		C5635AFA1E827ED4005981EE /* SDImageHorizontalLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDImageHorizontalLayout.h; sourceTree = "<group>"; };
 		C5635AFB1E827ED4005981EE /* SDImageHorizontalLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDImageHorizontalLayout.m; sourceTree = "<group>"; };
 		C5790E8B1E823AD3004A060D /* SDImagePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDImagePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,17 +62,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3A8FF28F7326BEDA6D2EAF4 /* libPods-SDImagePicker.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		75F0DCBD80064723DD0B6283 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3236A363019B10350B6972B /* libPods-SDImagePicker.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C5790E821E823AD3004A060D = {
 			isa = PBXGroup;
 			children = (
 				C5790E8D1E823AD3004A060D /* SDImagePicker */,
 				C5790E8C1E823AD3004A060D /* Products */,
+				CBF9875E539307F9229846C8 /* Pods */,
+				75F0DCBD80064723DD0B6283 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,8 +116,14 @@
 				C5635AFB1E827ED4005981EE /* SDImageHorizontalLayout.m */,
 				C54D45601E828F46008F1C11 /* SDPhotoManager.h */,
 				C54D45611E828F46008F1C11 /* SDPhotoManager.m */,
+				C54D45671E84DCB3008F1C11 /* SDImageBaseCollectionViewCell.h */,
+				C54D45681E84DCB3008F1C11 /* SDImageBaseCollectionViewCell.m */,
+				C54D456A1E84DCD8008F1C11 /* CameraCollectionViewCell.h */,
+				C54D456B1E84DCD8008F1C11 /* CameraCollectionViewCell.m */,
 				C54D45641E83E32E008F1C11 /* ImageCollectionViewCell.h */,
 				C54D45651E83E32E008F1C11 /* ImageCollectionViewCell.m */,
+				C54D456D1E84E035008F1C11 /* SDCollectionManager.h */,
+				C54D456E1E84E035008F1C11 /* SDCollectionManager.m */,
 			);
 			path = SDImagePicker;
 			sourceTree = "<group>";
@@ -106,6 +136,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		CBF9875E539307F9229846C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1C263575BB4C7636875EADE1 /* Pods-SDImagePicker.debug.xcconfig */,
+				053756F0FACB02231D40C012 /* Pods-SDImagePicker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -113,9 +152,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C5790EA21E823AD3004A060D /* Build configuration list for PBXNativeTarget "SDImagePicker" */;
 			buildPhases = (
+				5D81B0F86A0724E0E6F3DC1D /* [CP] Check Pods Manifest.lock */,
 				C5790E871E823AD3004A060D /* Sources */,
 				C5790E881E823AD3004A060D /* Frameworks */,
 				C5790E891E823AD3004A060D /* Resources */,
+				3FD700C8D245C2314270E44E /* [CP] Embed Pods Frameworks */,
+				664408CCA58F7355A057AE61 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -173,6 +215,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3FD700C8D245C2314270E44E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SDImagePicker/Pods-SDImagePicker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D81B0F86A0724E0E6F3DC1D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		664408CCA58F7355A057AE61 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SDImagePicker/Pods-SDImagePicker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C5790E871E823AD3004A060D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -180,7 +270,10 @@
 			files = (
 				C5635AFC1E827ED4005981EE /* SDImageHorizontalLayout.m in Sources */,
 				C5790EAA1E82499C004A060D /* SDSelectedImageActionSheetView.m in Sources */,
+				C54D456F1E84E035008F1C11 /* SDCollectionManager.m in Sources */,
 				C5790EA71E823FBD004A060D /* SDCameraView.m in Sources */,
+				C54D456C1E84DCD8008F1C11 /* CameraCollectionViewCell.m in Sources */,
+				C54D45691E84DCB3008F1C11 /* SDImageBaseCollectionViewCell.m in Sources */,
 				C54D45621E828F46008F1C11 /* SDPhotoManager.m in Sources */,
 				C5790E961E823AD3004A060D /* ViewController.m in Sources */,
 				C5790E931E823AD3004A060D /* AppDelegate.m in Sources */,
@@ -301,6 +394,7 @@
 		};
 		C5790EA31E823AD3004A060D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C263575BB4C7636875EADE1 /* Pods-SDImagePicker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 778546W9LD;
@@ -314,6 +408,7 @@
 		};
 		C5790EA41E823AD3004A060D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 053756F0FACB02231D40C012 /* Pods-SDImagePicker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 778546W9LD;

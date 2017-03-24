@@ -10,14 +10,8 @@
 
 @implementation ImageCollectionViewCell
 
-- (instancetype)initWithFrame:(CGRect)frame
+- (void)setUpView
 {
-    self = [super initWithFrame:frame];
-    if (self) {
-        self.backgroundColor = [UIColor redColor];
-        NSLog(@"item");
-    }
-    return self;
+    NSLog(@"%s",__func__);
 }
-
 @end
