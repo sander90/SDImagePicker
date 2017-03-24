@@ -47,6 +47,21 @@
     return self;
 }
 
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        _canCamera = [self canUseCamera];
+        if (_canCamera) {
+            [self customCamera];
+            [self customUI];
+        }else{
+            NSLog(@"启动Camera失败!!!");
+        }
+    }
+    return self;
+}
+
 - (BOOL)canUseCamera{
     AVAuthorizationStatus authStatus = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
     if (authStatus == AVAuthorizationStatusDenied) {

@@ -12,6 +12,7 @@
 #import "ImageCollectionViewCell.h"
 #import "CameraCollectionViewCell.h"
 #import "SDCollectionManager.h"
+#import <ReactiveCocoa/ReactiveCocoa.h>
 
 #define itemIdentifier @"imagecollectionCell"
 
@@ -22,16 +23,25 @@
     self = [super init];
     if (self) {
         self.frame = CGRectMake(0, HEIGHT, WIDTH, HEIGHT/3.0f);
-        [self.rootCollectionView registerClass:[ImageCollectionViewCell class] forCellWithReuseIdentifier:[ImageCollectionViewCell getReuseIdentifier]];
-        [self.rootCollectionView registerClass:[CameraCollectionViewCell class] forCellWithReuseIdentifier:[CameraCollectionViewCell getReuseIdentifier]]; 
-
-        self.rootCollectionView.delegate = self;
-        self.rootCollectionView.dataSource = self;
-        
-        self.rootCollectionView.showsHorizontalScrollIndicator = false;
+        [self configCollectionView];
         
     }
     return self;
+}
+
+- (void)configCollectionView
+{
+    [self.rootCollectionView registerClass:[ImageCollectionViewCell class] forCellWithReuseIdentifier:[ImageCollectionViewCell getReuseIdentifier]];
+    [self.rootCollectionView registerClass:[CameraCollectionViewCell class] forCellWithReuseIdentifier:[CameraCollectionViewCell getReuseIdentifier]];
+    
+    self.rootCollectionView.delegate = self;
+    self.rootCollectionView.dataSource = self;
+    
+    self.rootCollectionView.showsHorizontalScrollIndicator = false;
+    
+    [RACObserve(self.rootCollectionView, contentOffset) subscribeNext:^(id x) {
+        NSLog(@"KVO %@",x);
+    }];
 }
 
 - (void)willMoveToSuperview:(UIView *)newSuperview

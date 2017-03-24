@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "SDImageBaseCollectionViewCell.h"
+@class SDCameraView;
 
 @interface CameraCollectionViewCell : SDImageBaseCollectionViewCell
+
+@property (nonatomic, weak) SDCameraView * cameraView;
 
 @end

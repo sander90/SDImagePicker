@@ -8,15 +8,27 @@
 
 #import "CameraCollectionViewCell.h"
 #import <ReactiveCocoa/ReactiveCocoa.h>
+#import "SDCameraView.h"
 
 @implementation CameraCollectionViewCell
 
 - (void)setUpView
 {
     NSLog(@"%s",__func__);
-    [RACObserve(self, center) subscribeNext:^(id x) {
-        NSLog(@"what %@",x);
-    }];
+    
+    SDCameraView * camera = self.cameraView;
+    
 }
+
+- (SDCameraView *)cameraView
+{
+    if (!_cameraView) {
+        SDCameraView * camera = [[SDCameraView alloc] initWithFrame:self.bounds];
+        [self addSubview:camera];
+        _cameraView = camera;
+    }
+    return _cameraView;
+}
+
 
 @end
