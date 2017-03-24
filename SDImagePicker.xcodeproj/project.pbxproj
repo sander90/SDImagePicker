@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C54D45621E828F46008F1C11 /* SDPhotoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C54D45611E828F46008F1C11 /* SDPhotoManager.m */; };
+		C54D45661E83E32E008F1C11 /* ImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C54D45651E83E32E008F1C11 /* ImageCollectionViewCell.m */; };
 		C5635AFC1E827ED4005981EE /* SDImageHorizontalLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C5635AFB1E827ED4005981EE /* SDImageHorizontalLayout.m */; };
 		C5790E901E823AD3004A060D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C5790E8F1E823AD3004A060D /* main.m */; };
 		C5790E931E823AD3004A060D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5790E921E823AD3004A060D /* AppDelegate.m */; };
@@ -23,6 +24,8 @@
 		C53558831E82654C0092841E /* UtilsMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilsMacro.h; sourceTree = "<group>"; };
 		C54D45601E828F46008F1C11 /* SDPhotoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPhotoManager.h; sourceTree = "<group>"; };
 		C54D45611E828F46008F1C11 /* SDPhotoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDPhotoManager.m; sourceTree = "<group>"; };
+		C54D45641E83E32E008F1C11 /* ImageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCollectionViewCell.h; sourceTree = "<group>"; };
+		C54D45651E83E32E008F1C11 /* ImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCollectionViewCell.m; sourceTree = "<group>"; };
 		C5635AFA1E827ED4005981EE /* SDImageHorizontalLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDImageHorizontalLayout.h; sourceTree = "<group>"; };
 		C5635AFB1E827ED4005981EE /* SDImageHorizontalLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDImageHorizontalLayout.m; sourceTree = "<group>"; };
 		C5790E8B1E823AD3004A060D /* SDImagePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDImagePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,6 +92,8 @@
 				C5635AFB1E827ED4005981EE /* SDImageHorizontalLayout.m */,
 				C54D45601E828F46008F1C11 /* SDPhotoManager.h */,
 				C54D45611E828F46008F1C11 /* SDPhotoManager.m */,
+				C54D45641E83E32E008F1C11 /* ImageCollectionViewCell.h */,
+				C54D45651E83E32E008F1C11 /* ImageCollectionViewCell.m */,
 			);
 			path = SDImagePicker;
 			sourceTree = "<group>";
@@ -179,6 +184,7 @@
 				C54D45621E828F46008F1C11 /* SDPhotoManager.m in Sources */,
 				C5790E961E823AD3004A060D /* ViewController.m in Sources */,
 				C5790E931E823AD3004A060D /* AppDelegate.m in Sources */,
+				C54D45661E83E32E008F1C11 /* ImageCollectionViewCell.m in Sources */,
 				C5790E901E823AD3004A060D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

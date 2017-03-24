@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+@class SDImageHorizontalLayout;
+
+@protocol HorizontalLayoutDelegate <NSObject>
+
+- (CGFloat)HorizontalLayout:(SDImageHorizontalLayout *)layout heightatIndexPath:(NSIndexPath *)path;
+
+@end
+
 @interface SDImageHorizontalLayout : UICollectionViewLayout
 
 /**
@@ -23,6 +31,6 @@
 
 @property (nonatomic, assign) CGFloat rowCount;
 
-@property (nonatomic, assign) UIEdgeInsets sectionInsets;
+//@property (nonatomic, assign) UIEdgeInsets sectionInsets;
 
 @end

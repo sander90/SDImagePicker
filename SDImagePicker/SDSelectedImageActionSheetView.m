@@ -8,6 +8,10 @@
 
 #import "SDSelectedImageActionSheetView.h"
 #import "UtilsMacro.h"
+#import "SDImageHorizontalLayout.h"
+#import "ImageCollectionViewCell.h"
+
+#define itemIdentifier @"imagecollectionCell"
 
 @implementation SDSelectedImageActionSheetView
 
@@ -16,6 +20,13 @@
     self = [super init];
     if (self) {
         self.frame = CGRectMake(0, HEIGHT, WIDTH, HEIGHT/3.0f);
+        [self.rootCollectionView registerClass:[ImageCollectionViewCell class] forCellWithReuseIdentifier:itemIdentifier];
+
+        self.rootCollectionView.delegate = self;
+        self.rootCollectionView.dataSource = self;
+        
+        self.rootCollectionView.showsHorizontalScrollIndicator = false;
+        
     }
     return self;
 }
@@ -39,9 +50,34 @@
 - (UICollectionView *)rootCollectionView
 {
     if (!_rootCollectionView) {
-        //UICollectionView * theView = [[UICollectionView alloc] initWithFrame:<#(CGRect)#> collectionViewLayout:(nonnull UICollectionViewLayout *)]
+        UICollectionView * theView = [[UICollectionView alloc] initWithFrame:self.bounds collectionViewLayout:self.imageHorizontalLayout];
+        [self addSubview:theView];
+        _rootCollectionView = theView;
     }
     return _rootCollectionView;
+}
+
+- (SDImageHorizontalLayout *)imageHorizontalLayout
+{
+    if (!_imageHorizontalLayout) {
+        SDImageHorizontalLayout * layout = [[SDImageHorizontalLayout alloc] init];
+        _imageHorizontalLayout = layout;
+    }
+    return _imageHorizontalLayout;
+}
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
+    return 16;
+}
+
+// The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    UICollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:itemIdentifier forIndexPath:indexPath];
+    [cell setBackgroundColor:[UIColor redColor]];
+    
+    return cell;
+    
 }
 
 

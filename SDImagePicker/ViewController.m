@@ -34,8 +34,8 @@
 - (IBAction)onSelectedImage:(id)sender
 {
     NSLog(@"selected image");
-    self.cameraView.center =self.view.center;
-//    [self.theSelectedImageActionView showAction];
+//    self.cameraView.center =self.view.center;
+    [self.theSelectedImageActionView showAction];
 }
 
 - (SDSelectedImageActionSheetView * )theSelectedImageActionView

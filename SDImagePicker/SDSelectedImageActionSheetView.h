@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface SDSelectedImageActionSheetView : UIView
+@class SDImageHorizontalLayout;
+@interface SDSelectedImageActionSheetView : UIView<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 
 @property (nonatomic, weak) UICollectionView * rootCollectionView;
+
+@property (nonatomic, strong) SDImageHorizontalLayout * imageHorizontalLayout;
 
 - (void)showAction;
 
