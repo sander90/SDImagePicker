@@ -10,5 +10,8 @@
 #import <Photos/Photos.h>
 
 @interface SDPhotoManager : NSObject
++ (NSMutableArray *)getCollecionsWithSmartAlbumSubtype:(PHAssetCollectionSubtype)subtype;
+
++ (void)getTimeLineSectionModelsForIos8AboveWithGroup:(PHAssetCollection *)collection MaxCount:(NSInteger)maxCount success:(void (^)(NSMutableArray *))success failure:(void (^)(NSError *))failure;
 
 @end

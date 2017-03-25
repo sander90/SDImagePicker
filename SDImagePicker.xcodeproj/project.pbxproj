@@ -77,6 +77,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C54D45701E84FAE8008F1C11 /* camera */ = {
+			isa = PBXGroup;
+			children = (
+				C5790EA51E823FBD004A060D /* SDCameraView.h */,
+				C5790EA61E823FBD004A060D /* SDCameraView.m */,
+			);
+			name = camera;
+			sourceTree = "<group>";
+		};
 		C5790E821E823AD3004A060D = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +107,7 @@
 		C5790E8D1E823AD3004A060D /* SDImagePicker */ = {
 			isa = PBXGroup;
 			children = (
+				C54D45701E84FAE8008F1C11 /* camera */,
 				C5790E911E823AD3004A060D /* AppDelegate.h */,
 				C5790E921E823AD3004A060D /* AppDelegate.m */,
 				C5790E941E823AD3004A060D /* ViewController.h */,
@@ -107,8 +117,6 @@
 				C5790E9C1E823AD3004A060D /* LaunchScreen.storyboard */,
 				C5790E9F1E823AD3004A060D /* Info.plist */,
 				C5790E8E1E823AD3004A060D /* Supporting Files */,
-				C5790EA51E823FBD004A060D /* SDCameraView.h */,
-				C5790EA61E823FBD004A060D /* SDCameraView.m */,
 				C5790EA81E82499C004A060D /* SDSelectedImageActionSheetView.h */,
 				C5790EA91E82499C004A060D /* SDSelectedImageActionSheetView.m */,
 				C53558831E82654C0092841E /* UtilsMacro.h */,

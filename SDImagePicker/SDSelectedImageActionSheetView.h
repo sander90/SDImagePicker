@@ -14,6 +14,10 @@
 
 @property (nonatomic, strong) SDImageHorizontalLayout * imageHorizontalLayout;
 
+@property (nonatomic, strong) NSArray * thePhotoList;
+
+@property (nonatomic, assign) NSInteger max_show_image_count;
+
 - (void)showAction;
 
 @end

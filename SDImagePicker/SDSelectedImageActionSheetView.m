@@ -13,6 +13,7 @@
 #import "CameraCollectionViewCell.h"
 #import "SDCollectionManager.h"
 #import <ReactiveCocoa/ReactiveCocoa.h>
+#import "SDPhotoManager.h"
 
 #define itemIdentifier @"imagecollectionCell"
 
@@ -23,7 +24,9 @@
     self = [super init];
     if (self) {
         self.frame = CGRectMake(0, HEIGHT, WIDTH, HEIGHT/3.0f);
+        self.max_show_image_count = 20;
         [self configCollectionView];
+        [self configImageData];
         
     }
     return self;
@@ -43,6 +46,22 @@
         NSLog(@"KVO %@",x);
     }];
 }
+- (void)configImageData
+{
+    PHAssetCollection *cameraRoll = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeSmartAlbum subtype:PHAssetCollectionSubtypeSmartAlbumUserLibrary options:nil].lastObject;
+    
+    NSMutableArray * mutableList = [NSMutableArray arrayWithCapacity:0];
+    [SDPhotoManager getTimeLineSectionModelsForIos8AboveWithGroup:cameraRoll MaxCount:self.max_show_image_count success:^(NSMutableArray *list) {
+        NSLog(@"list = %ld",list.count);
+        [mutableList addObjectsFromArray:list];
+    } failure:^(NSError *error) {
+        
+    }];
+    
+    
+    self.thePhotoList = [NSArray arrayWithArray:mutableList];
+    
+}
 
 - (void)willMoveToSuperview:(UIView *)newSuperview
 {
@@ -55,7 +74,6 @@
         self.frame = CGRectMake(0, HEIGHT * 2.f / 3.0f, self.frame.size.width, self.frame.size.height);
     } completion:^(BOOL finished) {
         if (finished) {
-            NSLog(@"animation finish");
         }
     }];
 }
@@ -80,15 +98,20 @@
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    return 16;
+    return self.thePhotoList.count + 1;
 }
 
 // The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     SDImageBaseCollectionViewCell * cell = [SDCollectionManager ItemForCollectionView:collectionView atIndexPath:indexPath];
-    [cell setBackgroundColor:[UIColor redColor]];
     [cell setUpView];
+    if ([cell isKindOfClass:[ImageCollectionViewCell class]]) {
+        ImageCollectionViewCell * imageCell = (ImageCollectionViewCell *)cell;
+        
+        [imageCell loadPhoto:self.thePhotoList[indexPath.row - 1]];
+    }
+
     return cell;
 }
 

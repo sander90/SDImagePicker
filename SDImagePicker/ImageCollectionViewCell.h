@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "SDImageBaseCollectionViewCell.h"
+#import "SDPhotoManager.h"
 
 @interface ImageCollectionViewCell:SDImageBaseCollectionViewCell
 
+@property (nonatomic, weak) UIImageView * theImageView;
+
+- (void)loadPhoto:(PHAssetCollection *)asset;
 @end
