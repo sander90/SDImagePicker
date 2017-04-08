@@ -10,4 +10,8 @@
 
 @interface SDCameraView : UIView
 
+- (void)startRuningCamera;
+
+- (void)stopRuningCamera;
+
 @end

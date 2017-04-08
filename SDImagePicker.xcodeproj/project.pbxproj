@@ -21,8 +21,35 @@
 		C5790E9E1E823AD3004A060D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5790E9C1E823AD3004A060D /* LaunchScreen.storyboard */; };
 		C5790EA71E823FBD004A060D /* SDCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5790EA61E823FBD004A060D /* SDCameraView.m */; };
 		C5790EAA1E82499C004A060D /* SDSelectedImageActionSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5790EA91E82499C004A060D /* SDSelectedImageActionSheetView.m */; };
+		C5BDF9B21E89FBE200A64930 /* SDImagePickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BDF9B11E89FBE200A64930 /* SDImagePickerTests.m */; };
+		C5D4E0921E863C12002A9C76 /* SelectedImageHeadCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D4E0911E863C12002A9C76 /* SelectedImageHeadCollectionReusableView.m */; };
+		C5D4E0951E865789002A9C76 /* SelectedEntranceCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D4E0941E865789002A9C76 /* SelectedEntranceCollectionViewCell.m */; };
+		C5EE5AFE1E8A9216003E0F05 /* SDPhotoSelectedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5EE5AFD1E8A9216003E0F05 /* SDPhotoSelectedViewController.m */; };
 		E3A8FF28F7326BEDA6D2EAF4 /* libPods-SDImagePicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3236A363019B10350B6972B /* libPods-SDImagePicker.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C5BDF9B41E89FBE200A64930 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5790E831E823AD3004A060D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5790E8A1E823AD3004A060D;
+			remoteInfo = SDImagePicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C5BDF9AA1E89FB1B00A64930 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		053756F0FACB02231D40C012 /* Pods-SDImagePicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDImagePicker.release.xcconfig"; path = "Pods/Target Support Files/Pods-SDImagePicker/Pods-SDImagePicker.release.xcconfig"; sourceTree = "<group>"; };
@@ -55,6 +82,15 @@
 		C5790EA61E823FBD004A060D /* SDCameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCameraView.m; sourceTree = "<group>"; };
 		C5790EA81E82499C004A060D /* SDSelectedImageActionSheetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDSelectedImageActionSheetView.h; sourceTree = "<group>"; };
 		C5790EA91E82499C004A060D /* SDSelectedImageActionSheetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDSelectedImageActionSheetView.m; sourceTree = "<group>"; };
+		C5BDF9AF1E89FBE200A64930 /* SDImagePickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SDImagePickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5BDF9B11E89FBE200A64930 /* SDImagePickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDImagePickerTests.m; sourceTree = "<group>"; };
+		C5BDF9B31E89FBE200A64930 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5D4E0901E863C12002A9C76 /* SelectedImageHeadCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectedImageHeadCollectionReusableView.h; sourceTree = "<group>"; };
+		C5D4E0911E863C12002A9C76 /* SelectedImageHeadCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectedImageHeadCollectionReusableView.m; sourceTree = "<group>"; };
+		C5D4E0931E865789002A9C76 /* SelectedEntranceCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectedEntranceCollectionViewCell.h; sourceTree = "<group>"; };
+		C5D4E0941E865789002A9C76 /* SelectedEntranceCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectedEntranceCollectionViewCell.m; sourceTree = "<group>"; };
+		C5EE5AFC1E8A9216003E0F05 /* SDPhotoSelectedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPhotoSelectedViewController.h; sourceTree = "<group>"; };
+		C5EE5AFD1E8A9216003E0F05 /* SDPhotoSelectedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDPhotoSelectedViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +99,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3A8FF28F7326BEDA6D2EAF4 /* libPods-SDImagePicker.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5BDF9AC1E89FBE200A64930 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				C5790E8D1E823AD3004A060D /* SDImagePicker */,
+				C5BDF9B01E89FBE200A64930 /* SDImagePickerTests */,
 				C5790E8C1E823AD3004A060D /* Products */,
 				CBF9875E539307F9229846C8 /* Pods */,
 				75F0DCBD80064723DD0B6283 /* Frameworks */,
@@ -100,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				C5790E8B1E823AD3004A060D /* SDImagePicker.app */,
+				C5BDF9AF1E89FBE200A64930 /* SDImagePickerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,9 +152,12 @@
 		C5790E8D1E823AD3004A060D /* SDImagePicker */ = {
 			isa = PBXGroup;
 			children = (
+				C5BDF9B91E8A252400A64930 /* selectedImage */,
 				C54D45701E84FAE8008F1C11 /* camera */,
 				C5790E911E823AD3004A060D /* AppDelegate.h */,
 				C5790E921E823AD3004A060D /* AppDelegate.m */,
+				C5EE5AFC1E8A9216003E0F05 /* SDPhotoSelectedViewController.h */,
+				C5EE5AFD1E8A9216003E0F05 /* SDPhotoSelectedViewController.m */,
 				C5790E941E823AD3004A060D /* ViewController.h */,
 				C5790E951E823AD3004A060D /* ViewController.m */,
 				C5790E971E823AD3004A060D /* Main.storyboard */,
@@ -117,6 +165,30 @@
 				C5790E9C1E823AD3004A060D /* LaunchScreen.storyboard */,
 				C5790E9F1E823AD3004A060D /* Info.plist */,
 				C5790E8E1E823AD3004A060D /* Supporting Files */,
+			);
+			path = SDImagePicker;
+			sourceTree = "<group>";
+		};
+		C5790E8E1E823AD3004A060D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C5790E8F1E823AD3004A060D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C5BDF9B01E89FBE200A64930 /* SDImagePickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				C5BDF9B11E89FBE200A64930 /* SDImagePickerTests.m */,
+				C5BDF9B31E89FBE200A64930 /* Info.plist */,
+			);
+			path = SDImagePickerTests;
+			sourceTree = "<group>";
+		};
+		C5BDF9B91E8A252400A64930 /* selectedImage */ = {
+			isa = PBXGroup;
+			children = (
 				C5790EA81E82499C004A060D /* SDSelectedImageActionSheetView.h */,
 				C5790EA91E82499C004A060D /* SDSelectedImageActionSheetView.m */,
 				C53558831E82654C0092841E /* UtilsMacro.h */,
@@ -132,16 +204,12 @@
 				C54D45651E83E32E008F1C11 /* ImageCollectionViewCell.m */,
 				C54D456D1E84E035008F1C11 /* SDCollectionManager.h */,
 				C54D456E1E84E035008F1C11 /* SDCollectionManager.m */,
+				C5D4E0901E863C12002A9C76 /* SelectedImageHeadCollectionReusableView.h */,
+				C5D4E0911E863C12002A9C76 /* SelectedImageHeadCollectionReusableView.m */,
+				C5D4E0931E865789002A9C76 /* SelectedEntranceCollectionViewCell.h */,
+				C5D4E0941E865789002A9C76 /* SelectedEntranceCollectionViewCell.m */,
 			);
-			path = SDImagePicker;
-			sourceTree = "<group>";
-		};
-		C5790E8E1E823AD3004A060D /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				C5790E8F1E823AD3004A060D /* main.m */,
-			);
-			name = "Supporting Files";
+			name = selectedImage;
 			sourceTree = "<group>";
 		};
 		CBF9875E539307F9229846C8 /* Pods */ = {
@@ -166,6 +234,7 @@
 				C5790E891E823AD3004A060D /* Resources */,
 				3FD700C8D245C2314270E44E /* [CP] Embed Pods Frameworks */,
 				664408CCA58F7355A057AE61 /* [CP] Copy Pods Resources */,
+				C5BDF9AA1E89FB1B00A64930 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
@@ -175,6 +244,24 @@
 			productName = SDImagePicker;
 			productReference = C5790E8B1E823AD3004A060D /* SDImagePicker.app */;
 			productType = "com.apple.product-type.application";
+		};
+		C5BDF9AE1E89FBE200A64930 /* SDImagePickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5BDF9B61E89FBE300A64930 /* Build configuration list for PBXNativeTarget "SDImagePickerTests" */;
+			buildPhases = (
+				C5BDF9AB1E89FBE200A64930 /* Sources */,
+				C5BDF9AC1E89FBE200A64930 /* Frameworks */,
+				C5BDF9AD1E89FBE200A64930 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C5BDF9B51E89FBE200A64930 /* PBXTargetDependency */,
+			);
+			name = SDImagePickerTests;
+			productName = SDImagePickerTests;
+			productReference = C5BDF9AF1E89FBE200A64930 /* SDImagePickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -189,6 +276,12 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 778546W9LD;
 						ProvisioningStyle = Automatic;
+					};
+					C5BDF9AE1E89FBE200A64930 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 778546W9LD;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C5790E8A1E823AD3004A060D;
 					};
 				};
 			};
@@ -206,6 +299,7 @@
 			projectRoot = "";
 			targets = (
 				C5790E8A1E823AD3004A060D /* SDImagePicker */,
+				C5BDF9AE1E89FBE200A64930 /* SDImagePickerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -218,6 +312,13 @@
 				C5790E9E1E823AD3004A060D /* LaunchScreen.storyboard in Resources */,
 				C5790E9B1E823AD3004A060D /* Assets.xcassets in Resources */,
 				C5790E991E823AD3004A060D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5BDF9AD1E89FBE200A64930 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,17 +381,36 @@
 				C5790EAA1E82499C004A060D /* SDSelectedImageActionSheetView.m in Sources */,
 				C54D456F1E84E035008F1C11 /* SDCollectionManager.m in Sources */,
 				C5790EA71E823FBD004A060D /* SDCameraView.m in Sources */,
+				C5D4E0921E863C12002A9C76 /* SelectedImageHeadCollectionReusableView.m in Sources */,
 				C54D456C1E84DCD8008F1C11 /* CameraCollectionViewCell.m in Sources */,
 				C54D45691E84DCB3008F1C11 /* SDImageBaseCollectionViewCell.m in Sources */,
 				C54D45621E828F46008F1C11 /* SDPhotoManager.m in Sources */,
 				C5790E961E823AD3004A060D /* ViewController.m in Sources */,
 				C5790E931E823AD3004A060D /* AppDelegate.m in Sources */,
 				C54D45661E83E32E008F1C11 /* ImageCollectionViewCell.m in Sources */,
+				C5EE5AFE1E8A9216003E0F05 /* SDPhotoSelectedViewController.m in Sources */,
 				C5790E901E823AD3004A060D /* main.m in Sources */,
+				C5D4E0951E865789002A9C76 /* SelectedEntranceCollectionViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5BDF9AB1E89FBE200A64930 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5BDF9B21E89FBE200A64930 /* SDImagePickerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C5BDF9B51E89FBE200A64930 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5790E8A1E823AD3004A060D /* SDImagePicker */;
+			targetProxy = C5BDF9B41E89FBE200A64930 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C5790E971E823AD3004A060D /* Main.storyboard */ = {
@@ -428,6 +548,32 @@
 			};
 			name = Release;
 		};
+		C5BDF9B71E89FBE300A64930 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 778546W9LD;
+				INFOPLIST_FILE = SDImagePickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aico.-.SDImagePickerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SDImagePicker.app/SDImagePicker";
+			};
+			name = Debug;
+		};
+		C5BDF9B81E89FBE300A64930 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 778546W9LD;
+				INFOPLIST_FILE = SDImagePickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aico.-.SDImagePickerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SDImagePicker.app/SDImagePicker";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -445,6 +591,15 @@
 			buildConfigurations = (
 				C5790EA31E823AD3004A060D /* Debug */,
 				C5790EA41E823AD3004A060D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5BDF9B61E89FBE300A64930 /* Build configuration list for PBXNativeTarget "SDImagePickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5BDF9B71E89FBE300A64930 /* Debug */,
+				C5BDF9B81E89FBE300A64930 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

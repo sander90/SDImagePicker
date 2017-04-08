@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 @class SDImageHorizontalLayout;
-@interface SDSelectedImageActionSheetView : UIView<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
+@interface SDSelectedImageActionSheetView : UIView<UICollectionViewDataSource,UICollectionViewDelegate>
+{
+    CGFloat contentOffsetXZero;
+}
 
 @property (nonatomic, weak) UICollectionView * rootCollectionView;
 
@@ -17,6 +20,7 @@
 @property (nonatomic, strong) NSArray * thePhotoList;
 
 @property (nonatomic, assign) NSInteger max_show_image_count;
+
 
 - (void)showAction;
 

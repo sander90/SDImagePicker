@@ -34,6 +34,7 @@
         self.rowMargin = 5;
         self.attrsArray = [[NSMutableArray alloc] init];
         self.maxXDic = [[NSMutableDictionary alloc] init];
+        
     }
     return self;
 }
@@ -70,22 +71,29 @@
     
 }
 
+- (CGFloat)Unititemsize
+{
+    CGFloat height_item = (self.collectionView.frame.size.height - self.rowMargin) / 2.0f;
+    return height_item;
+}
 //计算出布局的地方
 - (UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     
     NSInteger row = indexPath.row;
         
-    CGFloat height_item = (self.collectionView.frame.size.height - self.rowMargin) / 2.0f;
-    
+    CGFloat height_item = [self Unititemsize];
     CGFloat width_item = height_item ;
 
     CGFloat x_item = 0.0f;
     CGFloat y_item = 0.0f;
     
     
-    if (row == 0) {
-        // 这个是第一个，这个是特殊的
+    if (row < 2) {
+        if (row == 1) {
+            x_item = self.max_X;
+        }
+        // 第一个和第二个都是特殊的Item
         width_item = width_item * 3.f / 2.f;
         height_item = self.collectionView.frame.size.height;
         self.max_X = x_item + width_item;
@@ -105,7 +113,6 @@
     
     UICollectionViewLayoutAttributes * attrs = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
     attrs.frame = CGRectMake(x_item, y_item, width_item, height_item);
-    
     return attrs;
 }
 // 这个方法需要返回所有的attrs，但是每次重新布局时，prepareLayout就已经计算好了，就需要再重新计算了
@@ -119,6 +126,7 @@
     
     return CGSizeMake(self.max_X, self.collectionView.frame.size.height);
 }
+
 
 
 

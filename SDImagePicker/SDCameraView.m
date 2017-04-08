@@ -127,6 +127,19 @@
 
     
 }
+
+- (void)startRuningCamera
+{
+    if (self.session) {
+        [self.session startRunning];
+    }
+}
+- (void)stopRuningCamera
+{
+    if (self.session) {
+        [self.session stopRunning];
+    }
+}
 #pragma mark - 截取照片
 - (void)shutterCamera:(UIGestureRecognizer *)gesure
 {

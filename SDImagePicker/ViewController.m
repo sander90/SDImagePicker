@@ -9,12 +9,15 @@
 #import "ViewController.h"
 #import "SDCameraView.h"
 #import "SDSelectedImageActionSheetView.h"
+#import "SDPhotoSelectedViewController.h"
 
 @interface ViewController ()
 
 @property (nonatomic, weak) SDCameraView * cameraView;
 
 @property (nonatomic, weak) SDSelectedImageActionSheetView * theSelectedImageActionView;
+
+@property (nonatomic, strong) SDPhotoSelectedViewController * thePhotoSelectedController;
 
 @end
 
@@ -23,6 +26,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+
 }
 
 
@@ -35,13 +39,26 @@
 {
     NSLog(@"selected image");
 //    self.cameraView.center =self.view.center;
-    [self.theSelectedImageActionView showAction];
+//    [self.theSelectedImageActionView showAction];
+    
+    [self presentViewController:self.thePhotoSelectedController animated:YES completion:^{
+        
+    }];
 }
+- (SDPhotoSelectedViewController *)thePhotoSelectedController
+{
+    if (!_thePhotoSelectedController) {
+        _thePhotoSelectedController = [[SDPhotoSelectedViewController alloc] init];
+        _thePhotoSelectedController.modalPresentationStyle = UIModalPresentationOverFullScreen;
 
+    }
+    return _thePhotoSelectedController;
+}
 - (SDSelectedImageActionSheetView * )theSelectedImageActionView
 {
     if (!_theSelectedImageActionView) {
         SDSelectedImageActionSheetView * theView = [[SDSelectedImageActionSheetView alloc] init];
+        
         [self.view addSubview:theView];
         _theSelectedImageActionView = theView;
     }
